@@ -1,0 +1,96 @@
+/* ========================== Storing variables to call upon later =========================*/
+:root {
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(252, 30%, 95%);
+    --color-grey: hsl(252, 16%, 65%);
+    --color-transparent: hsla(9, 100%, 64%, 0);
+    --color-primary: hsl(58, 36%, 58%);
+    --color-secondary: #2a2a2a;
+    --color-error: hsl(0, 95%, 65%);
+    --color-black: hsl (252, 30%, 10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --button-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+}
+/* ================== General Styling ==================*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    color: var(--color-secondary);
+    background: var(--color-light);
+    overflow: auto;
+    }
+
+/*======================================= Styling Navbar ========================================*/
+.NavContainer {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background: var(--color-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav .NavContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#NavLi {
+    float: left;
+}
+
+#NavLi a {
+    display: block;
+    color: var(--color-secondary);
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: var(--color-primary);
+    
+}
+
+li a.active {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+}
+
+/*==================================================== Styling header ==================================*/
+header {
+    background-color: var(--color-grey);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/*======================================================== Styling footer =================================*/
+footer {
+    padding: 20px;
+    text-align: left;
+    background-color: var(--color-primary);
+    margin-top: 20px;
+
+}
