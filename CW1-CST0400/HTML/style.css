@@ -39,6 +39,7 @@ body {
     width: 80%;
     margin: 0 auto;
     align-items: center;
+    position: sticky;
 }
 
 nav {
@@ -67,7 +68,7 @@ nav .NavContainer {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover{
     background-color: var(--color-primary);
     
 }
@@ -79,18 +80,102 @@ li a.active {
 
 /*==================================================== Styling header ==================================*/
 header {
-    background-color: var(--color-grey);
-    padding: 20px;
+    background-image: url(../Image/pexels-wildlittlethingsphoto-696218.jpg) ;
+    height: 75vh;
+    length: 100%;
+    background-size: cover; 
+    position: relative; 
+}
+
+header h1 {
+    color: var(--color-white);
+    font-size: 3rem;
     text-align: center;
+    padding-top: 20%;
 }
 
 
+/*==================================================== Styling main ==================================*/
+.h3Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/*======================================= Styling Description Card ========================================*/
+.DescriptionCard {
+    padding: 75px;
+    border-radius: var(--card-border-radius);
+    margin: 30px;
+    background-color: var(--color-white);
+}
+/*======================================= End of Description Card ========================================*/
+
+
+/*======================================= Styling Product Card ========================================*/
+.ProductHeader {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.ProductsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--color-white);
+    column-gap: 50;
+    padding: 100px;
+    margin-bottom: 200px;
+    length:50%;
+    border-radius: var(--card-border-radius);
+  }
+  .ProductsContainer  .ProductCard {
+    background-color: var(--color-secondary);
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    border-radius: var(--card-border-radius);
+  }
+  .ProductsContainer  .ProductCard img {
+    width: 100%;
+    border-radius: var(--card-border-radius);
+  }
+  
+
+  /*======================================= End of Product Card ========================================*/
+
+/*======================================= Styling Contact Page ========================================*/
+.Map {
+    height: 75vh;
+    length: 100%;
+    background-size: cover; 
+    position: relative; 
+    align-items: left;
+}
+
+.Table {
+    padding: 75px;
+    border-radius: var(--card-border-radius);
+    border-color: var(--color-secondary);
+    margin: 30px;
+    text-align: center;
+    width: 100%;
+}
 
 /*======================================================== Styling footer =================================*/
 footer {
+    position: fixed;
+    bottom: 0%;
+    left:0%;
+    width: 100%;
     padding: 20px;
-    text-align: left;
+    text-align: center;
     background-color: var(--color-primary);
     margin-top: 20px;
+}
 
+footer p {
+    padding: 10px 5px 5px 0px;
 }
